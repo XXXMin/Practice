@@ -1,0 +1,11 @@
+collection_name: agent
+persist_directory: chroma_db
+k: 3
+data_path: data
+md5_hex_store: md5.text
+allow_knowledge_file_type: ["txt","pdf"] #允许哪些后缀名文件加载到知识库中
+
+#spliter
+chunk_size: 200 #文本分割器分片最大大小
+chunk_overlap: 20 #允许连续分片间最大重叠数
+separators: ["\n\n","\n",".","!","?","。","！","？"," ",""]
